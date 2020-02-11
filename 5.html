@@ -1,0 +1,27 @@
+<p>input usia:</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<p>Kategori:</p>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x, text;
+        x = document.getElementById("numb").value;
+
+        if (x >= 21) {
+            text = "Dewasa";
+        } else if (x >= 13) {
+            text = "Remaja";
+        } else if (x >= 9) {
+            text = "Bimbingan orang tua";
+        } else if (x < 9) {
+            text = "Semua usia";
+        } else {
+            text = "null";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>

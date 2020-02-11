@@ -1,0 +1,24 @@
+<p>NO 11.</p>
+
+<button onclick="myFunction()">Klik</button>
+
+<p id="demo"></p>
+
+String <input type="text" id="teks"><br />
+<input type="button" onclick="reverse()" value="Mirror"><br />
+Hasil <input type="text" id="hasil">
+
+<script type="text/javascript">
+    function reverse() {
+        x = document.getElementById('teks').value;
+        var hsl, p;
+        hsl =
+            "";
+        p = x.length;
+        for (a = p - 1; a >=
+            0; a--) {
+            hsl = hsl + x.charAt(a);
+        }
+        document.getElementById('hasil').value = x + hsl;
+    }
+</script>

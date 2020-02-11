@@ -1,0 +1,17 @@
+<p>15</p>>
+<script type="text/javascript">
+  var hasil = 0;
+
+  function initPenjumlahan() {
+    var input = prompt("Masukan angka untuk dijumlahkan!");
+    if (input == "=") {
+      alert("Hasil penjumlahan: " + hasil);
+    } else if (isNaN(input)) {
+      alert("fungsi gagal, input hanya boleh angka!");
+    } else {
+      hasil += parseInt(input);
+      initPenjumlahan();
+    }
+  }
+  initPenjumlahan();
+</script>

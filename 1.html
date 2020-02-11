@@ -1,0 +1,23 @@
+<p>
+    <textarea id="kata" height="500"></textarea>
+</p>
+<p>
+    <span id="itung">0</span> Characters
+</p>
+
+<script>
+    let kata = document.getElementById("kata");
+    let itung = document.getElementById("itung");
+
+    kata.addEventListener("keyup", function () {
+        var characters = kata.value.split('');
+        itung.innerText = characters.filter(item => {
+            return (item != ' ');
+        }).length;
+    });
+</script>
+
+<p style="color: #d3d3d3;">(catatan)or u can use console<br>
+    console.log('saya'.lenght);
+    console.log('lari pagi'.lenght);
+</p>

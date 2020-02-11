@@ -1,0 +1,36 @@
+<p>Please input a number between 1 and 100:</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<p>Grade:</p>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x, text;
+        x = document.getElementById("numb").value;
+
+        if (x > 100) {
+            text = "Input not valid";
+        } else if (x >= 90 && x <= 100) {
+            text = "A";
+        } else if (x >= 80 && x <= 89) {
+            text = "B";
+        } else if (x >= 70 && x <= 79) {
+            text = "C";
+        } else if (x >= 60 && x <= 69) {
+            text = "D";
+        } else {
+            text = "E";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
+
+<!-- <p style="color: #d3d3d3;">(catatan)or u can use console<br>
+
+    if (x > 100) {
+    text = "Input not valid";
+    } else if (x >= 90 && x <= 100) { text="A" ; } else if (x>= 80 && x <= 89) { text="B" ; } else if (x>= 70 && x <=
+                79) { text="C" ; } else if (x>= 60 && x <= 69) { text="D" ; } else { text="E" ; }; console.log(text); </p> -->

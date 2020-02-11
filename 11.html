@@ -1,0 +1,20 @@
+<p>NO 11.</p>
+
+<button onclick="myFunction()">Klik</button>
+
+<p id="demo"></p>
+
+<script>
+    var fruits = ['Jeruk', 'Pepaya', 'Jambu', 'Anggur', 'Melon']
+    document.getElementById("demo").innerHTML = fruits;
+
+    function myFunction() {
+        fruits.pop();
+        fruits.pop();
+        fruits.pop();
+        fruits.push("Anggur");
+        fruits.push("Melon");
+
+        document.getElementById("demo").innerHTML = fruits;
+    }
+</script>

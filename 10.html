@@ -1,0 +1,17 @@
+<p>NO 10.</p>
+
+<button onclick="myFunction()">Klik</button>
+
+<p id="demo"></p>
+
+<script>
+    var fruits = ["Meja", "Buku", "Topi", "Baju", "Kayu"];
+    document.getElementById("demo").innerHTML = fruits;
+
+    function myFunction() {
+        fruits.push("Handuk");
+        fruits.unshift("celana");
+
+        document.getElementById("demo").innerHTML = fruits;
+    }
+</script>

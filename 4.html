@@ -1,0 +1,40 @@
+<p> input a number :</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x, text;
+        x = document.getElementById("numb").value;
+
+        if (x % 400 == 0) {
+            text = "Kabisat";
+        } else if (x % 100 == 0) {
+            text = "Kabisat";
+        } else if (x % 4 == 0) {
+            text = "Kabisat";
+        } else {
+            text = "BUkan Kabisat";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
+<p style="color: #d3d3d3;"> (catatan) or u can use console < br>
+        const leapYear = year => {
+        if (year % 400 === 0) {
+        return true;
+        } else if (year % 100 === 0) {
+        return false;
+        } else if (year % 4 === 0) {
+        return true;
+        } else {
+        return false;
+        }
+        }
+
+        console.log(leapYear(2018));
+        console.log(leapYear(2004)); </p>

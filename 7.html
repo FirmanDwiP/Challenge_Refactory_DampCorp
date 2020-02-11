@@ -1,0 +1,17 @@
+<button type="button" onclick="myFunction()">Klik</button>
+
+<p id="demo"> </p>
+
+<script>
+    function myFunction() {
+        var text = "";
+        var x
+
+        for (x = 1; x <= 100; x++) {
+            if (x % 2 != 0)
+                text += "nomer " + x + "<br>";
+            x++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>

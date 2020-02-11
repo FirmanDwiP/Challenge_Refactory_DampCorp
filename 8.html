@@ -1,0 +1,30 @@
+<p>No 8</p>
+
+<script type="text/javascript">
+    var hasil = "";
+    var i;
+    for (i = 1; i <= 1000; i++) {
+        if (i % 100 == 0) {
+            hasil += i.toString();
+            hasil += " Kelipatan Seratus <br/>";
+        } else if (i % 2 != 0) {
+            if (i % 5 == 0) {
+                hasil += i.toString();
+                hasil += " ganjil Kelipatan Lima <br/>";
+            } else {
+                hasil += i.toString();
+                hasil += " ganjil <br/>";
+            }
+        } else {
+            if (i % 5 == 0) {
+                hasil += i.toString();
+                hasil += " genap Kelipatan Lima <br/>";
+            } else {
+                hasil += i.toString();
+                hasil += " genap <br/>";
+            }
+        }
+    }
+
+    document.write(hasil);
+</script>
